@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Slides</title>
+    <style>
+        /* Basic styling for the slides */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+        }
+        .slide {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            width:  100%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .slide.active {
+            display: block;
+        }
+        .navigation {
+            margin-bottom:2px ;
+
+        }
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        .navigation button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+        .navigation button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide Content -->
+    <div id="slides-container">
+        <!-- Each div below represents a slide -->
+        <div class="slide active">
+            <h2>Chapter 1</h2>
+            <p>Main Idea: Summary of Chapter 1.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 1.</blockquote>
+        </div>
+
+        <!-- Additional slides (for simplicity, showing only 3, but can be extended to 39) -->
+        <div class="slide">
+            <h2>Chapter 2</h2>
+            <p>Main Idea: Summary of Chapter 2.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 2.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 3</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 4</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 5</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 6</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 7</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 8</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 9</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 10</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 11</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 12</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 13</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 14</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+                <div class="slide">
+            <h2>Chapter 15</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 16</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 17</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 17</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 18</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 19</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 20</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 21</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 22</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 23</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 24</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 25</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 26</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 27</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 28</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 29</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <div class="slide">
+            <h2>Chapter 30</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+
+        <div class="slide">
+            <h2>Chapter 31</h2>
+            <p>Main Idea: Summary of Chapter 3.</p>
+            <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+            </ul>
+            <blockquote>Quote from Chapter 3.</blockquote>
+        </div>
+
+        <!-- Add up to Chapter 39 in the same format -->
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="navigation">
+        <button id="prev" onclick="showSlide(currentSlide - 1)" disabled>Previous</button>
+        <button id="next" onclick="showSlide(currentSlide + 1)">Next</button>
+    </div>
+
+    <script>
+        // JavaScript for slide navigation
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+
+            // Update button states
+            document.getElementById('prev').disabled = currentSlide === 0;
+            document.getElementById('next').disabled = currentSlide === slides.length - 1;
+        }
+    </script>
+
+</body>
+</html>

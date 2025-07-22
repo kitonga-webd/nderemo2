@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:auto ;
+            margin: 0;
+        }
+        .profile {
+            width: 400px;
+            align-items: center;
+        }
+        .profile-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 100%;
+            align-items: center;
+        }
+        .profile-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .profile-container input[type="text"],
+        .profile-container input[type="email"],
+        .profile-container input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .profile-container input[type="submit"]{
+        
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #5cb85c;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            justify-content: space-between;
+        }
+        .profile-container input[type="submit"]:hover{
+
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>membership profile</h1>
+        <form class="profile" action="/profile" method="post" enctype="multipart/form-data" id="profile-form">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required />
+
+
+            <label for="middle_name">Middle Name</label>
+            <input type="text" id="middle_name" name="middle_name" required />
+
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" />
+
+            <label for="ID_number">ID Number</label>
+            <input type="text" id="ID_number" name="ID_number" required/>
+
+
+            <label for="county">county</label>
+            <input type="text"id="county" name="county" required/>
+
+            <label for="sub-county">sub-county</label>
+            <input type="text"id="sub-county" name="sub-county" required/>
+
+            <label for="ward">ward</label>
+            <input type="text"id="ward" name="ward" required/>
+
+            <input type="submit" value="Submit" />
+        </form>
+       
+    </div>
+
+    <script>
+        document.getElementById('view-profile-button').addEventListener('click', function() {
+            window.location.href = '/user_profile.html'; // Change this URL to the actual user profile page URL
+        });
+    </script>
+</body>
+</html>

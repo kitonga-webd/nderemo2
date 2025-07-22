@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Slides</title>
+    <style>
+        /* Basic styling for full-screen slides with a 5px margin */
+        body, html {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevents scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f4f6;
+        }
+        .slide-container {
+            position: relative;
+            width: calc(100vw - 10px); /* Full width minus 5px margin on each side */
+            height: 100vh;
+            margin: 0 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .slide.active {
+            display: flex;
+        }
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        .navigation button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+        .navigation button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        <!-- Slide Content -->
+        <div id="slides-container">
+            <!-- Each div below represents a slide -->
+            <div class="slide active">
+                <h2>Chapter 1</h2>
+                <p>Main Idea: Summary of Chapter 1.</p>
+                <ul>
+                    <li>Key Point 1</li>
+                    <li>Key Point 2</li>
+                    <li>Key Point 3</li>
+                </ul>
+                <blockquote>Quote from Chapter 1.</blockquote>
+            </div>
+
+            <!-- Additional slides (for simplicity, showing only 3, but can be extended to 39) -->
+            <div class="slide">
+                <h2>Chapter 2</h2>
+                <p>Main Idea: Summary of Chapter 2.</p>
+                <ul>
+                    <li>Key Point 1</li>
+                    <li>Key Point 2</li>
+                    <li>Key Point 3</li>
+                </ul>
+                <blockquote>Quote from Chapter 2.</blockquote>
+            </div>
+
+            <div class="slide">
+                <h2>Chapter 3</h2>
+                <p>Main Idea: Summary of Chapter 3.</p>
+                <ul>
+                    <li>Key Point 1</li>
+                    <li>Key Point 2</li>
+                    <li>Key Point 3</li>
+                </ul>
+                <blockquote>Quote from Chapter 3.</blockquote>
+            </div>
+
+            <!-- Add up to Chapter 39 in the same format -->
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="navigation">
+            <button id="prev" onclick="showSlide(currentSlide - 1)" disabled>Previous</button>
+            <button id="next" onclick="showSlide(currentSlide + 1)">Next</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for slide navigation
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+
+            // Update button states
+            document.getElementById('prev').disabled = currentSlide === 0;
+            document.getElementById('next').disabled = currentSlide === slides.length - 1;
+        }
+    </script>
+
+</body>
+</html>
