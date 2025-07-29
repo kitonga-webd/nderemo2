@@ -603,7 +603,7 @@ and pillars flex-boxes*/
     }
 
 .image-box{
-    width: 100%;
+    width: 1000px;
     height: 400px;
     object-fit: cover;
     display: block;
