@@ -601,5 +601,13 @@ and pillars flex-boxes*/
         padding: 12px 15px;
       }
     }
+
+.image-box{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+
+}
   
 
