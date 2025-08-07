@@ -613,7 +613,7 @@ and pillars flex-boxes*/
 /*styling for the our team page*/
   
 .image-container {
-  height: 75vh; /* 3/4 of the viewport height */
+  height: fit-content; /* 3/4 of the viewport height */
   width: 90%;
   margin: 20px auto;
   display: flex;
